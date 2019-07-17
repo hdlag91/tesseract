@@ -11,18 +11,23 @@
 
 ## Overview
 
-Exploring Tessearct to convert PDF files into a portable JSON file format.  
+When we try to pull information oout of PDF documents, users may end up pulling out both the plain text and images that are attached to the file. Since PDF files are not to be modified but all the information is usually transmitted, this can send unnesscarry data to an end user. In these cases, what if the user is only wanting to extract the plain-text from a PDF? The ability to lift plain -text out of a PDF includes using [OCR](https://docparser.com/blog/what-is-ocr/) or Optical Character Recognition. in this example, we use Tesseract for performing our OCR steps and convert the files over to a JSON format
 
 <div id='prereq'/>
 
 ## Prerequisites:
 
- - Installing PiP
- - Installing Tesseract
- - Installing ImageMagik
- - Installing gs
+**Note: Be sure that you have everything installed before continuing the project. Failure to have everything installed properly depending on your system can result in errors.**
 
+ - [PiP](https://pip.pypa.io/en/stable/installing/)
+ - [Tesseract](https://www.pyimagesearch.com/2017/07/03/installing-tesseract-for-ocr/)
+ **Note: If you are using Windows, you'll have to [consult the Tesseract documentation]**(https://github.com/tesseract-ocr/tesseract/wiki#windows)
+ - [ImageMagik](http://www.besavvy.com/documentation/4-5/Editor/031350_installimgk.htm)
+ - [Ghostscript](https://www.ghostscript.com/doc/current/Install.htm)
+
+#### If using macOS
 Navigate to the modules folder by issuing the following command: 
+
 ```console
 cd modules 
 ```
